@@ -1,2 +1,2 @@
 # Problem-Solving
-form Leetcode and  Hacker Rank by mainting the strike
+form Leetcode ,code chef and  Hacker Rank by mainting the strike
