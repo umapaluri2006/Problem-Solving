@@ -1,0 +1,12 @@
+#3498. Reverse Degree of a String
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        ch = list(s)
+        alp = [ord(c)-ord('a')+1 for c in ch]
+        rev = [27-v for v in alp]
+        
+        for i in range(len(rev)):
+            rev[i] = rev[i]*(i+1)
+        
+        t = sum(rev)
+        return t
