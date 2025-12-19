@@ -12,3 +12,15 @@ if __name__ == '__main__':
                 if(i+j+k != n):
                     a.append([i,j,k])
     print(a)
+
+
+//Finding the Runner up score
+//similar to second max element
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    a = set(arr)
+    b = list(a)
+    b.sort()
+    m = len(b)
+    print(b[m-2])
