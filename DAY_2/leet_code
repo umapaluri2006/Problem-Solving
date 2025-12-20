@@ -1,0 +1,10 @@
+//2114.Maximum words found in the sentence #leet code
+class Solution:
+    def mostWordsFound(self, se: List[str]) -> int:
+        m = 0
+        for i in range(len(se)):
+            c = se[i].count(" ")+1
+            if c > m:
+                m = c
+        return m
+
