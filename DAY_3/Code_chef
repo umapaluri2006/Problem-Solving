@@ -1,0 +1,14 @@
+#10533 rating problem(1000 to 1400)
+#prime revesal
+## here i do my own logic without any reversal technique
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s1 = input()
+    s2 = input()
+    a = s1.count("1")
+    b = s2.count("1")
+    if a==b:
+        print("YES")
+    else:
+        print("NO")
