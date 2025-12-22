@@ -15,3 +15,10 @@ class Solution:
         for i in t:
             if s.count(i)!=t.count(i):
                 return i
+
+#136.Single Number
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        for i in nums:
+            if nums.count(i)==1:
+                return i
