@@ -1,0 +1,12 @@
+#1064 rating problem 
+#Hungry Ashish
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    x,y,z = map(int,input().split())
+    if x<y and x<z:
+        print("NOTHING")
+    elif x>=y:
+        print("PIZZA")
+    else:
+        print("BURGER")
