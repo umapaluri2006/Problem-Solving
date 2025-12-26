@@ -1,7 +1,0 @@
-//1047 Rating Problem form(1000 to 1400)
-//reverse approach
-t = int(input())
-for _ in range(t):
-    s = input()
-    r = s[::-1]
-    print(r.count("><"))
