@@ -1,0 +1,45 @@
+#1069 Prime Generator
+import sys
+import math
+def is_prime(num):
+    if num<=1:
+        return False
+    if num<=3:
+        return True
+    if num%2==0 or num%3==0:
+        return False
+    i=5
+    while i*i<=num:
+        if num%i==0 or num%(i+2)==0:
+            return False
+        i+=6
+    return True
+t=int(input())
+for _ in range(t):
+    m,n=map(int,input().split())
+    for i in range(m,n+1):
+        if(is_prime(i)):
+            print(i)
+    if _ <t-1:
+        print()
+
+##for this i get the tle \|/ down ones
+
+import math
+# cook your dish here
+def isPrime(n):
+    if (n<=1):
+        return False
+    for i in range(2,int(math.sqrt(n))+1):
+        if (n%i==0):
+            return False
+    return True
+
+t = int(input())
+for _ in range(t):
+    n ,m = map(int,input().split())
+    for i in range(n,m+1):
+        if isPrime(i):
+            print(i)
+    if _< t-1:
+        print()
